@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afteltimer</title>
+  <style>
+    #timer {
+      font-size: 2em;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="timer">Loading...</div>
+
+<script>
+  // Aantal uren dat de timer moet aftellen (1296 uur)
+  const countdownHours = 1296;
+  const countdownSeconds = countdownHours * 3600; // Omzetten naar seconden
+  let remainingTime = countdownSeconds;
+
+  // Functie om de tijd bij te werken en weer te geven
+  function updateTimer() {
+    const days = Math.floor(remainingTime / (3600 * 24));
+    const hours = Math.floor((remainingTime % (3600 * 24)) / 3600);
+    const minutes = Math.floor((remainingTime % 3600) / 60);
+    const seconds = remainingTime % 60;
+
+    // Update de HTML van de timer
+    document.getElementById('timer').innerHTML =
+            `${days}d ${hours}u ${minutes}m ${seconds}s`;
+
+    // Verlaag de resterende tijd
+    if (remainingTime > 0) {
+      remainingTime--;
+    } else {
+      clearInterval(timerInterval);
+      document.getElementById('timer').innerHTML = "Timer is afgelopen!";
+    }
+  }
+
+  // Start de timer, bijwerken elke seconde
+  const timerInterval = setInterval(updateTimer, 1000);
+
+  // Eerste update direct uitvoeren
+  updateTimer();
+</script>
+</body>
+</html>
