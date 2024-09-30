@@ -4,7 +4,7 @@
         console.log(i);
     }
 }
-    console.log("---");
+    console.log("-2-");
 
 //2
 {
@@ -12,7 +12,7 @@
         console.log(i);
     }
 }
-    console.log("---");
+    console.log("-3-");
 
 //3
 {
@@ -22,7 +22,7 @@
         }
     }
 }
-    console.log("---");
+    console.log("-4-");
 
 //4
 {
@@ -33,7 +33,7 @@
         }
     }
 };
-    console.log("---");
+    console.log("-5-");
 
 //5
 {
@@ -51,7 +51,7 @@
     }
     console.log(output);
 };
-    console.log("---");
+    console.log("-6-");
 
 //6
 {
@@ -67,7 +67,7 @@
     console.log(output);
 
 };
-    console.log("---");
+    console.log("-7-");
 
 //7
 {
@@ -78,7 +78,7 @@
     }
         console.log("de totale som =", som);
 };
-    console.log("---");
+    console.log("-8-");
 
 //8
 {
@@ -89,7 +89,7 @@
     }
     console.log(som);
 };
-    console.log("---");
+    console.log("-9-");
 
 //9
 {
@@ -100,7 +100,7 @@
         }
     }
 };
-    console.log("---");
+    console.log("-10-");
 
 //10
 {
@@ -110,17 +110,17 @@
         console.log(`${tafel} * ${i} =`, tafel*i);
     };
 };
-    console.log("---");
+    console.log("-11-");
 
 //11
-/*{
+{
 
     for(let i = 1;i<=1000;i++){
-
         console.log(i);
+        i = i ** 2;
     }
-}*/
-    console.log("---");
+}
+    console.log("-12-");
 
 //12
 {
@@ -130,7 +130,7 @@
         console.log(i);
     }
 };
-    console.log("---");
+    console.log("-13-");
 
 //13
 {
@@ -139,7 +139,7 @@
         console.log(i);
     }
 };
-    console.log("---");
+    console.log("-14-");
 
 //14
 {
@@ -151,11 +151,79 @@
     }
     console.log("de totale som =", som);
 };
-    console.log("---");
+    console.log("-15-");
 
 //15
+
+    console.log("-16-");
+
+//16
 {
 
-    
+    let som = 0;
+    for(let i = 2;i<=100;i++){
+        if(i%2 == 0){
+            console.log(som);
+            som = som + i;
+        }
 
+    }
+
+}
+
+    console.log("-17-");
+
+//17
+{
+    let som = 0;
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 !== 0) {
+            console.log(som);
+            som = som + i;
+        }
+
+    }
+
+}
+
+    console.log("-18-");
+
+//18
+{
+
+}
+
+    console.log("-19-");
+
+//19
+{
+
+    let getal = parseInt(prompt("Kies een getal."));
+    for(let i = 1;i<=getal;i++){
+        if(i%5 == 0){
+            console.log(i);
+        }
+
+    }
+
+}
+
+    console.log("-20-");
+
+//20
+{
+
+}
+
+    console.log("-21-");
+
+//21
+{
+    for(let i = 1;i<=100;i++){
+        if(i%1 == 0){
+            console.log(i);
+        }else if(i%i == 0){
+            console.log(i);
+        }
+    }
 }
